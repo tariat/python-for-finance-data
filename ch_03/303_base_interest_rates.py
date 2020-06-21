@@ -74,16 +74,6 @@ sns.lineplot(data=df_graph,x="dt",y="base_rate",hue="nation", alpha=0.7)
 
 
 # 금리 관련 뉴스 정보를 수집합니다.
-API_KEY="96f5b5ce63766554fbcb884684641572"
-word="금리"
-
-from urllib.parse import quote
-
-url="https://gnews.io/api/v3/search?q={}&lang=ko&token={}".format(quote(word),API_KEY)
-result=urlopen(url)
-html=result.read()
-
-
 import urllib.request
 import json
 
